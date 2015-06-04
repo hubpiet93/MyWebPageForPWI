@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNet.Identity
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -7,7 +8,32 @@
 </head>
 <body>
     to bedzie menu
+    <div id="login-header">
+        @if (Request.IsAuthenticated)
+        {
+            using (Html.BeginForm("Logoff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+            {
+                @Html.AntiForgeryToken()
 
+                <div>
+                        @User.Identity.GetUserName()
+                </div>
+                
+                <div>
+                    <a href="javascript:document.getElementById('logoutForm').submit()">Wyloguj</a>
+                </div>
+            }
+        }
+        else
+        {
+            <div>
+                @Html.ActionLink("Rejestracja", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })
+            </div>
+            <div>
+                @Html.ActionLink("Zaloguj", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })
+            </div>
+        }
+    </div>
 
 <div>
     @RenderBody()

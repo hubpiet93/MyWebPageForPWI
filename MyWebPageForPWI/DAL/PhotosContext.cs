@@ -1,4 +1,5 @@
-﻿using MyWebPageForPWI.Models;
+﻿using Microsoft.AspNet.Identity.EntityFramework;
+using MyWebPageForPWI.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -7,7 +8,7 @@ using System.Web;
 
 namespace MyWebPageForPWI.DAL
 {
-    public class PhotosContext : DbContext
+    public class PhotosContext : IdentityDbContext<ApplicationUser>
     {
         public PhotosContext() : base("PhotosDb")
         {

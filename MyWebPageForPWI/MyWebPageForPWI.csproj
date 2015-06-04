@@ -146,6 +146,8 @@
   <ItemGroup>
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DAL\PhotosContext.cs" />
     <Compile Include="DAL\PhotosDbInitializer.cs" />
@@ -156,11 +158,16 @@
     <Compile Include="Migrations\201506040946560_InitialCreate.Designer.cs">
       <DependentUpon>201506040946560_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201506041040393_AddAppUser.cs" />
+    <Compile Include="Migrations\201506041040393_AddAppUser.Designer.cs">
+      <DependentUpon>201506041040393_AddAppUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\UserData.cs" />
     <Compile Include="Models\Zdjecie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\AccountViewModels.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -170,6 +177,8 @@
     <Content Include="Views\Shared\_PhotosLayout.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -184,6 +193,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201506040946560_InitialCreate.resx">
       <DependentUpon>201506040946560_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201506041040393_AddAppUser.resx">
+      <DependentUpon>201506041040393_AddAppUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -40,4 +40,4 @@ C:\Users\Hubert\Documents\Visual Studio 2013\PWI\Projekt(1)\MyWebPageForPWI\MyWe
 C:\Users\Hubert\Documents\Visual Studio 2013\PWI\Projekt(1)\MyWebPageForPWI\MyWebPageForPWI\bin\Microsoft.Owin.Security.Cookies.xml
 C:\Users\Hubert\Documents\Visual Studio 2013\PWI\Projekt(1)\MyWebPageForPWI\MyWebPageForPWI\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\Hubert\Documents\Visual Studio 2013\PWI\Projekt(1)\MyWebPageForPWI\MyWebPageForPWI\bin\Newtonsoft.Json.xml
-C:\Users\Hubert\Documents\Visual Studio 2013\PWI\Projekt(1)\MyWebPageForPWI\MyWebPageForPWI\obj\Debug\MyWebPageForPWI.csprojResolveAssemblyReference.cache
+C:\Users\Hubert\Documents\Visual Studio 2013\PWI\Projekt(1)\MyWebPageForPWI\MyWebPageForPWI\obj\Debug\MyWebPageForPWI.Migrations.AddAppUser.resources
