@@ -13,7 +13,7 @@ using MyWebPageForPWI.ViewModels;
 
 namespace MyWebPageForPWI.Controllers
 {
-    public class AccountController : Controller
+    public class AccountController : MyBaseController
     {
         public AccountController()
         {
@@ -153,7 +153,7 @@ namespace MyWebPageForPWI.Controllers
         private void AddErrors(IdentityResult result)
         {
             foreach (var error in result.Errors)
-            {
+            { 
                 ModelState.AddModelError("", error);
             }
         }

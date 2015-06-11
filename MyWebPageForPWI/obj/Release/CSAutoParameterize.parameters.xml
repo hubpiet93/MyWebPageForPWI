@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="PhotosDb-Web.config Connection String" description="PhotosDb Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\v11.0;Initial Catalog=PhotosDb;Integrated Security=SSPI; AttachDBFilename=|DataDirectory|\PhotosDb.mdf" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Hubert\\Documents\\Visual\ Studio\ 2013\\PWI2\\MyWebPageForPWI\\MyWebPageForPWI\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='PhotosDb']/@connectionString" />
+  </parameter>
+  <parameter name="MyWebPageForPWI.DAL.PhotosContext-Web.config Connection String" description="MyWebPageForPWI.DAL.PhotosContext Connection String used in web.config by the application to access the database." defaultValue="MyWebPageForPWI.DAL.PhotosContext_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Hubert\\Documents\\Visual\ Studio\ 2013\\PWI2\\MyWebPageForPWI\\MyWebPageForPWI\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MyWebPageForPWI.DAL.PhotosContext']/@connectionString" />
+  </parameter>
+</parameters>
