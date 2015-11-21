@@ -56,7 +56,7 @@ namespace MyWebPageForPWI.Controllers
                     SmtpClient klient = new SmtpClient("smtp.gmail.com");
 
                     klient.Port = 587;
-                    klient.Credentials = new NetworkCredential("pietruczukhubert@gmail.com", "Bercik1993");//pamiętać żeby zmienić hasło 
+                    klient.Credentials = new NetworkCredential("pietruczukhubert@gmail.com", "***********");//pamiętać żeby zmienić hasło 
                     klient.EnableSsl = true;
                     klient.Send(mail);
                 }
